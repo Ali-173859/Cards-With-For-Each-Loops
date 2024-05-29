@@ -1,0 +1,87 @@
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  body {
+    background: linear-gradient(190deg, #59a7ff, #5c2b0e); /* Vibrant gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    animation: pulse 3s infinite alternate; /* Pulsating effect */
+  }
+  
+  .creadit {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 1.2s;
+    text-transform: uppercase;
+    animation: pulse 3s infinite alternate; /* Pulsating effect */
+  }
+  
+  .ali {
+    font-size: 40px;
+    font-family: sans-serif;
+    text-shadow: 0 0 10px #ff00ff; /* Glowing text effect */
+  }
+  
+  .head {
+    font-size: 60px;
+    text-shadow: 0 0 10px #ff00ff; /* Glowing text effect */
+  }
+  
+  .bg-purple-500 {
+    background-color: #6b46c1;
+  }
+  
+  .hover\:bg-purple-700:hover {
+    background-color: #553c9a;
+  }
+  
+  .bg-red-500 {
+    background-color: #f56565;
+  }
+  
+  .hover\:bg-red-700:hover {
+    background-color: #c53030;
+  }
+  
+  .rounded {
+    border-radius: 0.375rem;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .name:hover {
+    color: #553c9a;
+  }
+  
+  /* Animated background */
+  @keyframes animateBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  body {
+    animation: animateBackground 10s linear infinite;
+  }
+  
